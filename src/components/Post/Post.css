@@ -1,0 +1,51 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.post{
+  width: 60%;
+  height: auto;
+  border: 2px solid gray;
+  border-radius: 3em;
+  margin: 15px;
+  padding: 5px;
+  background-color: #CAFFFB;
+  align-self: center;  
+  box-shadow: 5px 10px #888888;
+  
+}
+
+.reply{
+  margin: 10px;
+  background-color:#0396FF;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 2em;
+}
+
+.pstTxt{
+  font-family:zapfino, cursive ;
+}
+
+button {
+  background-color: #CAFFFB; /* Green */
+  border: 1px,#008CBA ;
+  border-radius: 1em;
+  color: black;
+  padding: 12px 24px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}

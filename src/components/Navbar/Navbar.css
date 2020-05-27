@@ -1,0 +1,27 @@
+.Navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.NavLinks{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NavLinks P{
+  margin: 1.5em;
+  padding: 0.5em;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 0.4em;
+}
+
+.Navbar P:hover{
+  background-color: gray;
+  color: white;
+}
+
+h1{
+  font-family: 'Comic Sans MS', fantasy;
+}
