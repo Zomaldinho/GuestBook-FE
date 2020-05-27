@@ -24,7 +24,7 @@ class NewPost extends Component {
     if (!this.state.title || !this.state.description) {
       return alert('You can not submit empty Title and/or Description');
     }
-    fetch(`http://localhost:5000/post`, {
+    fetch(`https://gb-serv.herokuapp.com/post`, {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({

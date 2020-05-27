@@ -43,7 +43,7 @@ class Register extends Component {
     if (this.state.password !== this.state.password2) {
       return window.alert('Re-Typed Password is Not Matching');
     }
-    fetch(`http://localhost:5000/register`, {
+    fetch(`https://gb-serv.herokuapp.com/register`, {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({

@@ -28,7 +28,7 @@ class Signin extends Component {
 
   //handle submit button onclick event
   submit = () => {
-    fetch(`http://localhost:5000/signin`, {
+    fetch(`https://gb-serv.herokuapp.com/signin`, {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({

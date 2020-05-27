@@ -12,7 +12,7 @@ class Post extends Component {
 
   //getting intial data from server
   componentDidMount() {
-    fetch('http://localhost:5000/')
+    fetch('https://gb-serv.herokuapp.com/')
       .then((response) => response.json())
       .then((data) => this.setState({ data }));
   }
@@ -21,7 +21,7 @@ class Post extends Component {
   delete = (post) => {
     let confirm = window.confirm('Are you sure you want to delete this post?');
     if (confirm) {
-      fetch(`http://localhost:5000/delete/${post._id}`, {
+      fetch(`https://gb-serv.herokuapp.com/delete/${post._id}`, {
         method: 'delete',
       })
         .then(this.componentDidMount())
@@ -46,7 +46,7 @@ class Post extends Component {
     if (!this.state.replyText) {
       return alert('You can not submit empty Reply');
     }
-    fetch(`http://localhost:5000/reply/${post._id}`, {
+    fetch(`https://gb-serv.herokuapp.com/reply/${post._id}`, {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({

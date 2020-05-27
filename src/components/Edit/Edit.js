@@ -24,7 +24,7 @@ class Edit extends Component {
     if (!this.state.title || !this.state.description) {
       return alert('You can not submit empty Title and/or Description');
     }
-    fetch(`http://localhost:5000/edit/${this.props.editedPost._id}`, {
+    fetch(`https://gb-serv.herokuapp.com/edit/${this.props.editedPost._id}`, {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({
